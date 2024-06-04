@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+//header
+
+$titleFont : 'Pacifico', cursive;
+$headerColor: linear-gradient(
+    90deg,
+    rgba(246, 231, 231, 0.981127485173757) 0%,
+    rgba(251, 28, 28, 1) 47%,
+    rgba(233, 8, 8, 0.8) 100%
+  );
+$titleColor: 0 0 0.05em #5cc0ed, 0 0 0.2em #5cc0ed, 0 0 0.3em #5cc0ed;
+$titleFontSize: 6vw;
+
+//body
+
+
+$redBlueGradient:linear-gradient(
+  90deg,
+  rgba(238, 28, 28, 0.821) 0%,
+  rgb(197, 59, 59) 47%,
+  rgba(42, 119, 226, 0.8) 100%
+);
+
+$redBlueGradientTrans:linear-gradient(
+  90deg,
+  rgba(238, 28, 28, 1) 0%,
+  rgb(197, 59, 59, 1) 47%,
+  rgba(42, 119, 226, 1) 100%
+);
+
+$blueBackground:linear-gradient(90deg,
+rgba(46, 79, 229, 0.981) 0%,
+rgb(61, 163, 231) 47%,
+rgb(141, 205, 239) 100%);
+
