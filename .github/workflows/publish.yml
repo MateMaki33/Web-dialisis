@@ -3,7 +3,7 @@ name: Generate a build and push to another branch
 on:
   push:
     branches:
-      - main # La rama donde se realizan los nuevos cambios
+      - main
 
 jobs:
   build:
@@ -17,12 +17,14 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build # El comando de construcción de tu proyecto
+        run: npm run build
 
       - name: Push dist folder to another branch
         uses: s0/git-publish-subdir-action@develop
         with:
-          branch: main # Cambia esto al nombre de la rama donde quieres empujar el contenido de la carpeta dist
-          directory: dist
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          commit_message: "Build: ({sha}) {msg}"
+          REPO: self
+          BRANCH: main
+          FOLDER: dist
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MESSAGE: "Build: ({sha}) {msg}"
+
