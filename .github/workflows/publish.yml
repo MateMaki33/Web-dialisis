@@ -3,27 +3,26 @@ name: Generate a build and push to another branch
 on:
   push:
     branches:
-      - main # The branch name your are commit the new changes
+      - main # La rama donde se realizan los nuevos cambios
 
 jobs:
   build:
     runs-on: ubuntu-latest
     name: Build and Push
     steps:
-      - name: git-checkout
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Install all dependencies
         run: npm install
 
       - name: Build
-        run: npm run build # The build command of your project
+        run: npm run build # El comando de construcción de tu proyecto
 
-      - name: Push
+      - name: Push dist folder to another branch
         uses: s0/git-publish-subdir-action@develop
-        env:
-          REPO: self
-          BRANCH: main # The branch name where you want to push the assets
-          FOLDER: dist # The directory where your assets are generated
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
-          MESSAGE: "Build: ({sha}) {msg}" # The commit message
+        with:
+          branch: main # Cambia esto al nombre de la rama donde quieres empujar el contenido de la carpeta dist
+          directory: dist
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          commit_message: "Build: ({sha}) {msg}"
