@@ -28,7 +28,7 @@ body{
     background: $blueBackground;
 }
 span{
-    color: rgb(237, 213, 78);
+    color: rgb(233, 219, 101);
   font-family: sans-serif;
   
 }

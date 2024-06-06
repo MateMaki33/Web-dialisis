@@ -33,7 +33,7 @@ parametros.push(
     "los rangos habituales. No obstante, en patología crónica, el cuerpo se adapta, " +
     "y pacientes con cifras de <span>hipertensión</span>  pueden no presentar sintomatología.</p>" +
   "<p>" +
-    "Durante el tratamiento, al extraer líquido, puede bajar y dar"  +
+    "Durante el tratamiento, al extraer líquido, puede bajar y dar "  +
     "lugar a <span> hipotensión</span>" +
   "</p><br>" +
   "<p>Por ello, no hemos de asustarnos, pero sí llevar este seguimiento para conocernos. " +

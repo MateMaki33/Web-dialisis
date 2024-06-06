@@ -7,6 +7,7 @@ import CookiesView from '../views/CookiesView.vue'
 import PrivacidadView from '../views/PrivacidadView.vue'
 import ConsultaPotasio from '../views/ConsultaPotasio.vue'
 import ConsultaFosforo from '../views/ConsultaFosforo.vue'
+import ReproductorView from '../views/ReproductorView.vue'
 
 
 const routes = [
@@ -29,6 +30,11 @@ const routes = [
       path: '/consejos_para_dialisis',
       name: 'Consejos',
       component: ConsejosView
+    },
+    {
+      path: '/reproductor_de_musica',
+      name: '🎶 Música',
+      component: ReproductorView
     },
     {
       path: '/potasio_alimentos',

@@ -40,7 +40,7 @@
       <div class="col col-sm-6">
         <img
           class="img-fluid"
-          src="../assets/dializador.png"
+          src="../assets/dializador.jpg"
           alt="dializador dibujado"
         />
       </div>

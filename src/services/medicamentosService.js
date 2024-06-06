@@ -9,7 +9,7 @@ medicaciones.value.push(
   },
   { 
     nombre: "Paricalcitol", 
-    descripcion: "Análogo sintético de los receptores de la vitamina D y sensibles al calcio. Para entendernos, imita a la vitamina D y al calcio en los receptores de la glandula paratiroidea. Esto da lugar a que la hormona paratiroidea no se dispare, controlando nuestros niveles de calcio y fosforo. Recordamos que la hormona paratiroidea se libera cuando hay niveles bajos de calcio, y va al hueso para obtenerlo de ahi principalmente.",
+    descripcion: "Análogo sintético de los receptores de la vitamina D y sensibles al calcio. Para entendernos, imita a la vitamina D y al calcio en los receptores de la glandula paratiroidea. Esto da lugar a que la hormona paratiroidea no se dispare, controlando nuestros niveles de calcio y fosforo. Recordamos que la hormona paratiroidea se libera cuando hay niveles bajos de calcio, y va al hueso para obtenerlo de ahí principalmente.",
     ruta: require("@/assets/zemplar.jpg")
   },
   { 
