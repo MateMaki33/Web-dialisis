@@ -1,18 +1,22 @@
 <template>
   <div class="container">
     <div class="row justify-content-center">
+      <div class="col-12 text-center">
+        <h1 class="titulos">Healing Tears</h1>
+        <p class="text-white"><strong> Una lista de reproduccion creada con Suno IA dedicada a la Enfermería</strong></p>
+      </div>
       <div class="col-8">
-        <div v-for="(cancion, index) in cancionesMapeadas" :key="index" class="card mb-4">
+        <div v-for="(cancion, index) in cancionesMapeadas" :key="index" class="card mb-4 bg-transparent">
           <div class="row g-0">
             <div class="col-md-4">
               <img :src="cancion.imgUrl" class="img-fluid rounded-start" alt="Imagen de la canción">
             </div>
             <div class="col-md-8">
-              <div class="card-body">
+              <div class="card-body text-white">
                 <h5 class="card-title">{{ cancion.name }}</h5>
                 <p class="card-text">{{ cancion.type }}</p>
-                <button class="btn btn-primary me-2" @click="reproducir(cancion)">Play</button>
-                <button class="btn btn-danger" @click="detener">Stop</button>
+                <button class="btn btn-primary me-2" @click="reproducir(cancion)">▶️</button>
+                <button class="btn btn-danger" @click="detener">⏸️</button>
               </div>
               <div class="row text-center">
                  <div v-if="cancion.sonando" class="estado-sonando col-4">📀</div>
@@ -57,6 +61,7 @@ const detener = () => {
 </script>
 
 <style scoped>
+
 .container {
   margin-top: 50px;
 }

@@ -24,8 +24,9 @@ window.addEventListener('scroll', function () {
 </script>
 
 <style lang="scss">
+
 body{
-    background: $blueBackground;
+    background: $darkBackground;
 }
 span{
     color: rgb(233, 219, 101);
